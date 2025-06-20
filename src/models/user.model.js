@@ -22,24 +22,18 @@ const userSchema = new mongoose.Schema({
         required: true,
         trim: true,
         index: true,
-        lowercase: true
     },
     password: {
         type: String,
         required: [true, 'Password is required'],
         minlength: [6, 'Password must be at least 6 characters long'],
     },
-    createdAt: {
-        type: Date,
-        default: Date.now
-    },
     avatar: {
         type: String,//cloudinary url
-        default: 'https://res.cloudinary.com/dz3qj1x4h/image/upload/v1706261234/nexplay/default-avatar.png'
+        required: true,
     },
     coverimage: {
         type: String,//cloudinary url
-        default: 'https://res.cloudinary.com/dz3qj1x4h/image/upload/v1706261234/nexplay/default-cover.png'
     },
     watchHistory: [{
         type: mongoose.Schema.Types.ObjectId,

@@ -9,5 +9,12 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+//accessing cookies
+//through bith req and res
+app.use(cookieParser());
+
+// Import routes
+const userRoutes = require('./routes/user.routes');
+app.use('/api/v1/users', userRoutes);
 
 module.exports = {app};

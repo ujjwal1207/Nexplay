@@ -8,7 +8,7 @@
   "license": "ISC",
   "author": "Ujjwal Sharma",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,13 +16,16 @@
     "bcrypt": "^6.0.0",
     "cloudinary": "^2.6.1",
     "cookie-parser": "^1.4.7",
+    "cookieparser": "^0.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.15.1",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.0",
     "mongoose-aggregate-paginate-v2": "^1.1.4",
     "multer": "^2.0.1",
+    "node": "^24.2.0",
     "nodemon": "^3.1.10"
   }
 }
